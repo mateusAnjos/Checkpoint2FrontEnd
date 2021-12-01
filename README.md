@@ -2,6 +2,8 @@
 
 Segundo checkpoint para a disciplina de FrontEnd I do curso Certified tech Developer. Utilizando como base o site criado no Checkpoint 1 (https://github.com/mateusAnjos/Checkpoint1-frontend1), dei seguimento para o Checkpoint 2 seguindo as instruções abaixo.
 
+Netlify link: https://checkpoint2mateusanjos-frontend-1.netlify.app/
+
 Objetivo:
 
 O objetivo do trabalho é desenvolver habilidades na criação de formulários, animações e pseudo-seletores.
