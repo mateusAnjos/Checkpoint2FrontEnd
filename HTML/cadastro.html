@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkpoint</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Existe ou não, amor em São Paulo - SP?</h1>
+
+    </header>
+    <div class="container">
+        <form action="" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" class="input" maxlength="100" name="nome" id="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" class="input" name="email" id="email">
+
+            <div class="inputFlex">
+                <label for="telefone">Telefone:</label>
+                <input type="number" class="input" name="telefone" id="telefone">
+
+                <label for="birthdate">Data de Nascimento:</label>
+                <input type="date" class="input" name="birthdate" id="birthdate">
+            </div>
+
+            <label for="maioridade">Você tem mais de 18 anos?</label>
+            <div class="inputFlex">
+                <div class="inputRadio">
+                    <input type="radio" class="input" name="maioridade" id="maior" value="Mais de 18 anos">
+                    <span>Mais de 18 anos</span>
+                </div>
+                <div class="inputRadio">
+                    <input type="radio" class="input" name="maioridade" id="menor" value="Menos de 18 anos">
+                    <span>Menos de 18 anos</span>
+                </div>
+            </div>
+            <label for="interesse">Selecione seu ponto de interesse na cidade:</label>
+            <select name="interesse" id="interesse">
+                <option value="" selected disabled></option>
+                <option value="masp">Museu de Arte dee São Paulo</option>
+                <option value="ibirapuera">Parque Ibirapuera</option>
+                <option value="becoBatman">Beco do Batman</option>
+            </select>
+
+            <label for="motivo">Qual o seu motivo para visitar São Paulo?</label>
+            <div class="inputGrid">
+                <div class="inputSpan">
+                    <input type="checkbox" class="input" name="motivo" id="Turismo">
+                    <span>Turismo</span>
+                </div>
+                <div class="inputSpan">
+                    <input type="checkbox" class="input" name="motivo" id="Estudos">
+                    <span>Estudos</span>
+                </div>
+                <div class="inputSpan">
+                    <input type="checkbox" class="input" name="motivo" id="Moradia">
+                    <span>Moradia</span>
+                </div>
+                <div class="inputSpan">
+                    <input type="checkbox" class="input" name="motivo" id="Trabalho">
+                    <span>Trabalho</span>
+                </div>
+            </div>
+            <div class="btns">
+                <button id="enviar">Enviar</button>
+                <input type="reset" value="Limpar Campos" id="clear">
+    
+            </div>
+        </form>
+    </div>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

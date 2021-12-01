@@ -18,7 +18,10 @@ header{
     background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
     font-weight: bold;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
     grid-template-columns: 1fr 0.3fr;
     color: rgba(255, 255, 255, 0.431);
     width: 96.5%;
@@ -37,7 +40,6 @@ main{
     margin: 30px;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.2);
-    width: 50%px;
     padding: 30px;
 }
 p{
@@ -88,7 +90,7 @@ footer{
     background-color: rgba(253, 253, 253, 0.342);
     padding: 10px;
     border-radius: 15px;
-    margin-left: -20px;
+    margin-left: 20px;
     margin-top: 10px;
 }
 #criolo{
@@ -99,10 +101,127 @@ footer{
     background-color: rgba(253, 253, 253, 0.342);
     padding: 10px;
     border-radius: 15px;
-    margin-left: -20px;
-    margin-top: 10px;
+    margin-left: 20px;
     
 }
 li{
     margin-left: 15px;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+#btnMenuCadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    margin-right: 100px;
+    transition-property: background-color, font-size;
+    transition-duration: 200ms;
+
+}
+#btnMenuCadastro:hover{
+    background-color: rgba(255, 255, 255, 0.733);
+    font-size: 32px
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    transition-property: transform;
+    transition-duration: 200ms;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.input:hover{
+    transform: scale(2);
+}
+select{
+    transition-property: transform;
+    transition-duration: 200ms;
+    border-radius: 5px;
+}
+select:hover{
+    transform: scale(2);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+}
+label{
+    color: white;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+button{
+    border-radius: 5px;
+    cursor: pointer;
+    width: 180px;
+    padding: 8px;
+    font-size: 16px;
+    transition-property: box-shadow;
+    transition-duration: 200ms;
+    font-weight: bold;
+}
+button:hover{
+    box-shadow: 1px 1px 2px black;
+}
+.inputSpan, .inputRadio{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.inputRadio{
+    margin-right: 12px;
+}
+.inputFlex{
+    display: flex;
+    align-items: flex-end;
+}
+.inputGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+#enviar{
+    background-color: rgb(195, 243, 195);
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+#enviar:hover{
+    background-color: rgb(60, 250, 60);
+}
+
+#clear{
+    background-color: rgb(241, 102, 102);
+    transition-property: background-color, box-shadow;
+    transition-duration: 500ms;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 180px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transform: scale(1) ;
+}
+#clear:hover{
+    background-color: rgb(248, 44, 44);
 }
